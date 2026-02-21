@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  taskmanager:
+    build:
+      context: .
+      dockerfile: TaskManager/Dockerfile
+    container_name: taskmanager-app
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=${Database};Username=${Username};Password=${Password}
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - taskmanager-network
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: taskmanager-postgres
+    environment:
+      POSTGRES_USER: ${Username}
+      POSTGRES_PASSWORD: ${Password}
+      POSTGRES_DB: ${Database}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - taskmanager-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dbadmin -d TaskManagerDb"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
+
+networks:
+  taskmanager-network:
+    driver: bridge
