@@ -10,5 +10,6 @@ namespace TaskManager.Data
         }
 
         public DbSet<TaskEntity> Tasks { get; set; } = null!;
+        public DbSet<User> Users { get; set; } = null!;
     }
 }

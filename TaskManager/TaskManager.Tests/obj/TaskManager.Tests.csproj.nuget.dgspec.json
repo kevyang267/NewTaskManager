@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj": {}
+    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj": {
+    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj",
         "projectName": "TaskManager.Tests",
-        "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj",
+        "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\TaskManager.Tests.csproj",
         "packagesPath": "C:\\Users\\oofa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager.Tests\\obj\\",
+        "outputPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\TaskManager.csproj": {
-                "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\TaskManager.csproj"
+              "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj": {
+                "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj"
               }
             }
           }
@@ -373,14 +373,14 @@
         }
       }
     },
-    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\TaskManager.csproj": {
+    "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\TaskManager.csproj",
+        "projectUniqueName": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
         "projectName": "TaskManager",
-        "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\TaskManager.csproj",
+        "projectPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
         "packagesPath": "C:\\Users\\oofa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\Task Manager\\TaskManager\\TaskManager\\obj\\",
+        "outputPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -422,6 +422,14 @@
             "Asp.Versioning.Http": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[10.0.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

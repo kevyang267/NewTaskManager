@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TaskManager.Models;
 using TaskManager.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TaskManager.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/v1/[controller]")]
     public class TaskManagerController : ControllerBase

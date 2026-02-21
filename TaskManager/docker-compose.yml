@@ -10,7 +10,7 @@ services:
       - "5000:8080"
       - "5001:8081"
     environment:
-      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=${Database};Username=${Username};Password=${Password}
+      - ConnectionStrings__DefaultConnection=${DB_CONNECTION}
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:8080
     depends_on:
