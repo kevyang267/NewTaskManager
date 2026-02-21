@@ -3,12 +3,13 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { TaskDTO, Task, taskFromDTO, taskToDTO } from '../models/task';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TaskService {
-  private readonly apiUrl = 'http://localhost:5000/api/v1/TaskManager';
+  private readonly apiUrl = `${environment.apiUrl}/TaskManager`;
 
   constructor(private http: HttpClient) {}
 
@@ -50,17 +51,16 @@ export class TaskService {
     let errorMessage = 'An unknown error occurred';
 
     if (error.error instanceof ErrorEvent) {
-      // Client-side or network error
       errorMessage = `Error: ${error.error.message}`;
     } else {
-      // Backend error
       errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
 
-      // Handle specific status codes
       if (error.status === 404) {
         errorMessage = 'Task not found';
       } else if (error.status === 400) {
         errorMessage = error.error?.message || 'Bad request';
+      } else if (error.status === 401) {
+        errorMessage = 'Unauthorized: Please log in';
       }
     }
 
