@@ -7,13 +7,13 @@ using TaskManager.Security;
 
 namespace TaskManager.Services
 {
-    public class TokenService :ITokenService
+    public class TokenService : ITokenService
     {
         private readonly IConfiguration _config;
 
         public TokenService(IConfiguration config) => _config = config;
 
-        public string GenerateToken(User user)
+        public Task<string> GenerateToken(UserEntity user)
         {
             var claims = new[]
             {
@@ -33,7 +33,8 @@ namespace TaskManager.Services
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            // Wrap synchronous result in a completed Task
+            return Task.FromResult(new JwtSecurityTokenHandler().WriteToken(token));
         }
     }
 }

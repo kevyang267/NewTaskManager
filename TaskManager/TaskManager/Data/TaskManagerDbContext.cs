@@ -5,11 +5,8 @@ namespace TaskManager.Data
 {
     public class TaskManagerDbContext : DbContext
     {
-        public TaskManagerDbContext(DbContextOptions<TaskManagerDbContext> options) : base(options)
-        {
-        }
-
+        public TaskManagerDbContext(DbContextOptions<TaskManagerDbContext> options) : base(options) { }
         public DbSet<TaskEntity> Tasks { get; set; } = null!;
-        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<UserEntity> Users { get; set; } = null!;
     }
 }

@@ -4,6 +4,7 @@ namespace TaskManager.Models
 {
     public class TaskDTO
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Title is required.")]

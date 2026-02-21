@@ -5,7 +5,7 @@ using Microsoft.OpenApi;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using System.Text;
 using TaskManager.Data;
-using TaskManager.Middleware.TaskManager.Middleware;
+using TaskManager.Middleware;
 using TaskManager.Security;
 using TaskManager.Services;
 

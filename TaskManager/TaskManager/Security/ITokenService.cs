@@ -4,6 +4,6 @@ namespace TaskManager.Security
 {
     public interface ITokenService
     {
-        string GenerateToken(User user);
+        Task<string> GenerateToken(UserEntity user);
     }
 }
