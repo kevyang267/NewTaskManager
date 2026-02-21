@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -11,11 +11,11 @@ import { AuthService } from '../../auth/auth.service';
   templateUrl: './login.html',
 })
 export class LoginComponent {
-  email: string = '';
-  password: string = '';
-  isRegistering: boolean = false;
-  isLoading: boolean = false;
-  errorMessage: string = '';
+  email = signal('');
+  password = signal('');
+  isRegistering = signal(false);
+  isLoading = signal(false);
+  errorMessage = signal('');
 
   constructor(
     private authService: AuthService,
@@ -23,34 +23,43 @@ export class LoginComponent {
   ) {}
 
   submit() {
-    if (!this.email.trim() || !this.password.trim()) {
-      this.errorMessage = 'Please enter your email and password.';
+    if (!this.email().trim() || !this.password().trim()) {
+      this.errorMessage.set('Please enter your email and password.');
       return;
     }
 
-    this.isLoading = true;
-    this.errorMessage = '';
+    this.isLoading.set(true);
+    this.errorMessage.set('');
 
-    const action$ = this.isRegistering
-      ? this.authService.register(this.email, this.password)
-      : this.authService.login(this.email, this.password);
+    const action$ = this.isRegistering()
+      ? this.authService.register(this.email(), this.password())
+      : this.authService.login(this.email(), this.password());
 
     action$.subscribe({
       next: () => {
+        this.isLoading.set(false);
         this.router.navigate(['/tasks']);
       },
       error: (error) => {
-        this.errorMessage = this.isRegistering
-          ? 'Registration failed. Please try again.'
-          : 'Invalid email or password.';
-        this.isLoading = false;
+        if (this.isRegistering()) {
+          if (error?.message?.includes('409')) {
+            this.errorMessage.set(
+              'An account with this email already exists. Please sign in instead.',
+            );
+          } else {
+            this.errorMessage.set('Registration failed. Please try again.');
+          }
+        } else {
+          this.errorMessage.set('Invalid email or password.');
+        }
+        this.isLoading.set(false);
         console.error('Auth error:', error);
       },
     });
   }
 
   toggleMode() {
-    this.isRegistering = !this.isRegistering;
-    this.errorMessage = '';
+    this.isRegistering.update((v) => !v);
+    this.errorMessage.set('');
   }
 }

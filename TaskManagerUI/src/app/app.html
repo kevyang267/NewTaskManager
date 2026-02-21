@@ -1,8 +1,14 @@
-<div class="min-h-screen bg-gray-100">
-  <header class="bg-blue-600 text-white p-4">
-    <h1 class="text-2xl font-bold">{{ title }}</h1>
-  </header>
-  <main class="container mx-auto p-4">
-    <app-task-manager></app-task-manager>
+<div
+  class="min-h-screen bg-zinc-950"
+  style="
+    background-image: radial-gradient(
+      ellipse 60% 50% at 50% -10%,
+      rgba(200, 240, 74, 0.08) 0%,
+      transparent 70%
+    );
+  "
+>
+  <main class="container mx-auto px-4 py-8">
+    <router-outlet></router-outlet>
   </main>
 </div>

@@ -9,9 +9,9 @@ namespace TaskManager.Services
     public class AuthService : IAuthService
     {
         private readonly TaskManagerDbContext _context;
-        private readonly TokenService _tokenService;  
+        private readonly ITokenService _tokenService;
 
-        public AuthService(TaskManagerDbContext context, TokenService tokenService)
+        public AuthService(TaskManagerDbContext context, ITokenService tokenService)
         {
             _context = context;
             _tokenService = tokenService;
@@ -20,7 +20,6 @@ namespace TaskManager.Services
         public async Task<string> RegisterAsync(RegisterRequest request)
         {
             var email = request.Email.Trim().ToLower();
-
             if (await _context.Users.AnyAsync(u => u.Email == email))
                 throw new InvalidOperationException("Email already in use");
 
@@ -32,7 +31,6 @@ namespace TaskManager.Services
 
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
-
             return await _tokenService.GenerateToken(user);
         }
 

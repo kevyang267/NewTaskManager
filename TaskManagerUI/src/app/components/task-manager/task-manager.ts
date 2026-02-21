@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, AfterViewInit, PLATFORM_ID, inject, signal } from '@angular/core';
+import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../models/task';
@@ -10,42 +10,46 @@ import { Task } from '../../models/task';
   imports: [CommonModule, FormsModule],
   templateUrl: './task-manager.html',
 })
-export class TaskManager implements OnInit {
-  tasks: Task[] = [];
-  newTaskTitle: string = '';
-  newTaskDescription: string = '';
-  isLoading: boolean = false;
-  errorMessage: string = '';
+export class TaskManager implements AfterViewInit {
+  tasks = signal<Task[]>([]);
+  newTaskTitle = signal('');
+  newTaskDescription = signal('');
+  isLoading = signal(false);
+  errorMessage = signal('');
+
+  private platformId = inject(PLATFORM_ID);
 
   constructor(private taskService: TaskService) {}
 
-  ngOnInit() {
-    this.loadTasks();
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      setTimeout(() => this.loadTasks(), 0);
+    }
   }
 
   loadTasks() {
-    this.isLoading = true;
-    this.errorMessage = '';
+    this.isLoading.set(true);
+    this.errorMessage.set('');
 
     this.taskService.getAllTasks().subscribe({
       next: (tasks) => {
-        this.tasks = tasks;
-        this.isLoading = false;
+        this.tasks.set(tasks);
+        this.isLoading.set(false);
       },
       error: (error) => {
-        this.errorMessage = 'Failed to load tasks';
-        this.isLoading = false;
+        this.errorMessage.set('Failed to load tasks');
+        this.isLoading.set(false);
         console.error('Error loading tasks:', error);
       },
     });
   }
 
   addTask() {
-    if (this.newTaskTitle.trim()) {
+    if (this.newTaskTitle().trim()) {
       const newTask: Task = {
-        id: 0, // API will assign the real ID
-        title: this.newTaskTitle,
-        description: this.newTaskDescription,
+        id: 0,
+        title: this.newTaskTitle(),
+        description: this.newTaskDescription(),
         isCompleted: false,
         createdAt: new Date(),
         completedAt: null,
@@ -53,12 +57,12 @@ export class TaskManager implements OnInit {
 
       this.taskService.createTask(newTask).subscribe({
         next: (createdTask) => {
-          this.tasks.push(createdTask);
-          this.newTaskTitle = '';
-          this.newTaskDescription = '';
+          this.tasks.update((tasks) => [...tasks, createdTask]);
+          this.newTaskTitle.set('');
+          this.newTaskDescription.set('');
         },
         error: (error) => {
-          this.errorMessage = 'Failed to create task';
+          this.errorMessage.set('Failed to create task');
           console.error('Error creating task:', error);
         },
       });
@@ -74,11 +78,10 @@ export class TaskManager implements OnInit {
 
     this.taskService.updateTask(task.id, updatedTask).subscribe({
       next: () => {
-        task.isCompleted = updatedTask.isCompleted;
-        task.completedAt = updatedTask.completedAt;
+        this.tasks.update((tasks) => tasks.map((t) => (t.id === task.id ? updatedTask : t)));
       },
       error: (error) => {
-        this.errorMessage = 'Failed to update task';
+        this.errorMessage.set('Failed to update task');
         console.error('Error updating task:', error);
       },
     });
@@ -87,10 +90,10 @@ export class TaskManager implements OnInit {
   deleteTask(id: number) {
     this.taskService.deleteTask(id).subscribe({
       next: () => {
-        this.tasks = this.tasks.filter((task) => task.id !== id);
+        this.tasks.update((tasks) => tasks.filter((t) => t.id !== id));
       },
       error: (error) => {
-        this.errorMessage = 'Failed to delete task';
+        this.errorMessage.set('Failed to delete task');
         console.error('Error deleting task:', error);
       },
     });
