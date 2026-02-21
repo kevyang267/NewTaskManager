@@ -6,7 +6,7 @@ This repository contains a containerized web application designed for performanc
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Backend:** .NET 10 (Web API), Entity Framework Core
 * **Frontend:** Angular, TypeScript, TailwindCSS / Angular Material
