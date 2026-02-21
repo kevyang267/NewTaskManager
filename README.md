@@ -4,6 +4,7 @@
 
 This repository contains a containerized web application designed for performance and scalability. The backend is powered by a **.NET 10** Web API, the frontend is a modern **Angular** application, and the entire stack (including the database) is orchestrated using **Docker Compose**.
 
+![Alt text](Login.png)
 ---
 
 ## Tech Stack
