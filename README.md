@@ -8,9 +8,9 @@ This repository contains a containerized web application designed for performanc
 
 ## Tech Stack
 
-* **Backend:** .NET 10 (Web API), Entity Framework Core
-* **Frontend:** Angular, TypeScript, TailwindCSS / Angular Material
-* **Database:** PostgreSQL *(Update as needed)*
+* **Backend:** .NET 10 (MVC), Entity Framework Core
+* **Frontend:** Angular, TypeScript, TailwindCSS 
+* **Database:** PostgreSQL 
 * **Infrastructure:** Docker, Docker Compose
 
 ---
@@ -29,12 +29,39 @@ Before you begin, ensure you have the following installed on your local machine:
 ## Project Structure
 
 ```text
-├── api/                  # .NET 10 Web API project
-│   ├── Controllers/      # API Endpoints
-│   ├── Data/             # EF Core DbContext & Migrations
-│   └── Dockerfile        # Backend container configuration
-├── client/               # Angular frontend project
-│   ├── src/              # Angular source code
-│   └── Dockerfile        # Frontend container configuration
-├── docker-compose.yml    # Orchestrates the API, Client, and Database
-└── README.md             # Project documentation
+NewTaskManager/
+├── TaskManager/                    # .NET Backend
+│   ├── TaskManager/                # Main project
+│   │   ├── Controllers/            # API controllers
+│   │   ├── Data/                   # DbContext
+│   │   ├── Middleware/             # Global exception handler
+│   │   ├── Migrations/             # EF Core migrations
+│   │   ├── Models/                 # Entity models
+│   │   ├── Properties/             # Launch settings
+│   │   ├── Security/               # Auth interfaces & token service
+│   │   ├── Services/               # Business logic
+│   │   ├── appsettings.json        # App configuration
+│   │   ├── Program.cs              # Entry point & DI setup
+│   │   └── TaskManager.csproj      # Project file
+│   ├── TaskManager.Tests/          # Unit tests
+│   └── Dockerfile                  # Backend Docker build
+├── TaskManagerUI/                  # Angular Frontend
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── auth/               # Auth service, interceptor & guard
+│   │   │   ├── components/         # Login & task manager components
+│   │   │   ├── models/             # Task & DTO models
+│   │   │   ├── services/           # Task service
+│   │   │   ├── app.config.ts       # App providers
+│   │   │   ├── app.routes.ts       # Route definitions
+│   │   │   ├── app.ts              # Root component
+│   │   │   └── app.html            # Root template
+│   │   ├── environments/
+│   │   │   ├── environment.ts          # Local dev config
+│   │   │   └── environment.production.ts  # Production config
+│   │   └── main.ts                 # Browser entry point
+│   └── Dockerfile                  # Frontend Docker build
+├── .dockerignore
+├── .env                            # Environment variables (do not commit)
+├── docker-compose.yml              # Multi-container setup
+└── README.md
