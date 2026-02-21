@@ -3,8 +3,8 @@ version: "3.8"
 services:
   taskmanager:
     build:
-      context: .
-      dockerfile: TaskManager/Dockerfile
+      context: ./TaskManager
+      dockerfile: Dockerfile
     container_name: taskmanager-app
     ports:
       - "5000:8080"
@@ -16,6 +16,21 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+    networks:
+      - taskmanager-network
+    restart: unless-stopped
+
+  taskmanager-ui:
+    build:
+      context: ./TaskManagerUI
+      dockerfile: Dockerfile
+    container_name: taskmanager-ui
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - taskmanager
     networks:
       - taskmanager-network
     restart: unless-stopped
