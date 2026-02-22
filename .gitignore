@@ -1,1 +1,44 @@
-node_modules
+# ========================
+# Environment & Secrets
+# ========================
+.env
+*.env
+appsettings.Production.json
+
+# ========================
+# .NET
+# ========================
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+*.log
+
+# ========================
+# Angular / Node
+# ========================
+node_modules/
+**/node_modules/
+dist/
+.angular/
+*.js.map
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# IDEs
+# ========================
+.vscode/
+.idea/
+*.swp
