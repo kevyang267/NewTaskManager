@@ -3,13 +3,15 @@
 # ========================
 .env
 *.env
-appsettings.Production.json
+TaskManager/TaskManager/appsettings.Production.json
 
 # ========================
 # .NET
 # ========================
-bin/
-obj/
+TaskManager/TaskManager/bin/
+TaskManager/TaskManager/obj/
+TaskManager/TaskManager.Tests/bin/
+TaskManager/TaskManager.Tests/obj/
 *.user
 *.suo
 .vs/
@@ -19,11 +21,10 @@ TestResults/
 # ========================
 # Angular / Node
 # ========================
+TaskManagerUI/node_modules/
+TaskManagerUI/dist/
+TaskManagerUI/.angular/
 node_modules/
-**/node_modules/
-dist/
-.angular/
-*.js.map
 
 # ========================
 # Docker
