@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\security\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\controllers\\taskmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\data\\taskmanagerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\data\\taskmanagerdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\middleware\\globalexceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\security\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\security\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|solutionrelative:taskmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBC5C6EB-A249-AFF4-6779-A3EB98273C24}|TaskManager\\TaskManager.csproj|c:\\users\\oofa\\documents\\net projects\\git\\newtaskmanager\\taskmanager\\taskmanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -118,13 +114,112 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\IAuthService.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Security\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\IAuthService.cs",
+              "RelativeToolTip": "TaskManager\\Security\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T19:35:31.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GlobalExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
+              "RelativeToolTip": "TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T03:47:40.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskManagerDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Data\\TaskManagerDbContext.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Data\\TaskManagerDbContext.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Data\\TaskManagerDbContext.cs",
+              "RelativeToolTip": "TaskManager\\Data\\TaskManagerDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T02:03:38.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Program.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Program.cs",
+              "RelativeToolTip": "TaskManager\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T03:47:40.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TaskManager\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAmwEYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T17:13:10.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\AuthService.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Security\\AuthService.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\AuthService.cs",
+              "RelativeToolTip": "TaskManager\\Security\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T19:35:05.522Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\TokenService.cs",
+              "RelativeDocumentMoniker": "TaskManager\\Security\\TokenService.cs",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\TokenService.cs",
+              "RelativeToolTip": "TaskManager\\Security\\TokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T16:52:51.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\appsettings.json",
+              "RelativeDocumentMoniker": "TaskManager\\appsettings.json",
+              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\appsettings.json",
+              "RelativeToolTip": "TaskManager\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-16T03:47:40.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "TaskManagerController.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\TaskManagerController.cs",
               "RelativeDocumentMoniker": "TaskManager\\Controllers\\TaskManagerController.cs",
               "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\TaskManagerController.cs",
               "RelativeToolTip": "TaskManager\\Controllers\\TaskManagerController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T02:03:35.847Z"
             },
@@ -139,104 +234,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T02:17:09.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\IAuthService.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Security\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\IAuthService.cs",
-              "RelativeToolTip": "TaskManager\\Security\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:35:31.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GlobalExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
-              "RelativeToolTip": "TaskManager\\Middleware\\GlobalExceptionMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:47:40.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TaskManagerDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Data\\TaskManagerDbContext.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Data\\TaskManagerDbContext.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Data\\TaskManagerDbContext.cs",
-              "RelativeToolTip": "TaskManager\\Data\\TaskManagerDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T02:03:38.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Program.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Program.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Program.cs",
-              "RelativeToolTip": "TaskManager\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T03:47:40.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "TaskManager\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwB0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T17:13:10.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Dockerfile",
-              "RelativeDocumentMoniker": "TaskManager\\Dockerfile",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Dockerfile",
-              "RelativeToolTip": "TaskManager\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-21T02:07:18.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\AuthService.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Security\\AuthService.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\AuthService.cs",
-              "RelativeToolTip": "TaskManager\\Security\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:35:05.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\TokenService.cs",
-              "RelativeDocumentMoniker": "TaskManager\\Security\\TokenService.cs",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Security\\TokenService.cs",
-              "RelativeToolTip": "TaskManager\\Security\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T16:52:51.65Z"
             },
             {
               "$type": "Document",
@@ -325,18 +322,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\appsettings.json",
-              "RelativeDocumentMoniker": "TaskManager\\appsettings.json",
-              "ToolTip": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\appsettings.json",
-              "RelativeToolTip": "TaskManager\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-16T03:47:40.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "TaskManager\\Properties\\launchSettings.json",
@@ -348,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "TaskManager",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
               "RelativeDocumentMoniker": "TaskManager\\TaskManager.csproj",
@@ -359,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "libman.json",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\libman.json",
               "RelativeDocumentMoniker": "TaskManager\\libman.json",
@@ -371,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "TaskManager.csproj",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager\\TaskManager.csproj",
               "RelativeDocumentMoniker": "TaskManager\\TaskManager.csproj",
@@ -383,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "TaskManagerControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\Controllers\\TaskManagerControllerTests.cs",
               "RelativeDocumentMoniker": "TaskManager.Tests\\Controllers\\TaskManagerControllerTests.cs",
@@ -395,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "DbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\TestUtilities\\DbContextFactory.cs",
               "RelativeDocumentMoniker": "TaskManager.Tests\\TestUtilities\\DbContextFactory.cs",
@@ -407,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "TaskServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\Services\\TaskServiceTests.cs",
               "RelativeDocumentMoniker": "TaskManager.Tests\\Services\\TaskServiceTests.cs",
@@ -419,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\oofa\\Documents\\NET PROJECTS\\GIT\\NewTaskManager\\TaskManager\\TaskManager.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "TaskManager.Tests\\UnitTest1.cs",

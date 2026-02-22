@@ -21,6 +21,14 @@ builder.WebHost.ConfigureKestrel(options =>
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = ctx =>
+            {
+                ctx.Token = ctx.Request.Cookies["auth_token"];
+                return Task.CompletedTask;
+            }
+        };
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
@@ -35,17 +43,17 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
-
 builder.Services.AddScoped<ITokenService, TokenService>();
-builder.Services.AddScoped<IAuthService, AuthService>(); 
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:4000")
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
 
@@ -53,15 +61,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    // Optional: Customize Swagger documentation details
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "TaskManagerAPI",
         Version = "v1"
     });
-    // Add security definitions if needed (e.g., Bearer tokens)
 });
-
 
 builder.Services.AddDbContext<TaskManagerDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -82,7 +87,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-// Move migration into a local async method
 async Task MigrateDatabaseAsync()
 {
     using var scope = app.Services.CreateScope();
@@ -106,7 +110,9 @@ await MigrateDatabaseAsync();
 // USAGE 
 app.UseMiddleware<GlobalExceptionMiddleware>();
 app.UseRouting();
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
 await app.RunAsync();

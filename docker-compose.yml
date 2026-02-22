@@ -50,10 +50,11 @@ services:
       - taskmanager-network
     restart: unless-stopped
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U dbadmin -d TaskManagerDb"]
+      test: ["CMD-SHELL", "pg_isready -U ${Username} -d ${Database}"]
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 30s
 
 volumes:
   postgres_data:

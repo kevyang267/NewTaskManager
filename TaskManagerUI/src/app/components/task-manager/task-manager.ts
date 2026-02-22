@@ -1,13 +1,15 @@
 import { Component, AfterViewInit, PLATFORM_ID, inject, signal } from '@angular/core';
-import { isPlatformBrowser, CommonModule } from '@angular/common';
+import { isPlatformBrowser, DatePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TaskService } from '../../services/task.service';
 import { Task } from '../../models/task';
+import { AuthService } from '../../auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-manager',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [FormsModule, DatePipe],
   templateUrl: './task-manager.html',
 })
 export class TaskManager implements AfterViewInit {
@@ -19,7 +21,11 @@ export class TaskManager implements AfterViewInit {
 
   private platformId = inject(PLATFORM_ID);
 
-  constructor(private taskService: TaskService) {}
+  constructor(
+    private taskService: TaskService,
+    private authService: AuthService,
+    private router: Router,
+  ) {}
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
@@ -96,6 +102,13 @@ export class TaskManager implements AfterViewInit {
         this.errorMessage.set('Failed to delete task');
         console.error('Error deleting task:', error);
       },
+    });
+  }
+
+  logout() {
+    this.authService.logout().subscribe({
+      next: () => this.router.navigate(['/login']),
+      error: () => this.router.navigate(['/login']),
     });
   }
 }

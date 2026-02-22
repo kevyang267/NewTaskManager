@@ -31,13 +31,14 @@
     <!-- Body -->
     <section class="px-10 py-8 flex flex-col gap-5">
       <!-- Error Banner -->
-      <div
-        *ngIf="errorMessage()"
-        role="alert"
-        class="bg-red-950 border border-red-900 text-red-400 text-sm px-4 py-3 rounded-lg"
-      >
-        {{ errorMessage() }}
-      </div>
+      @if (errorMessage()) {
+        <div
+          role="alert"
+          class="bg-red-950 border border-red-900 text-red-400 text-sm px-4 py-3 rounded-lg"
+        >
+          {{ errorMessage() }}
+        </div>
+      }
 
       <!-- Email -->
       <div class="flex flex-col gap-1.5">
@@ -89,7 +90,7 @@
         [attr.aria-busy]="isLoading()"
         class="mt-1 w-full bg-lime-400 hover:bg-lime-300 active:scale-[0.98] text-zinc-950 font-semibold text-sm rounded-lg py-3 flex items-center justify-center min-h-12 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        <ng-container *ngIf="isLoading(); else buttonText">
+        @if (isLoading()) {
           <svg
             class="animate-spin h-5 w-5 text-zinc-950"
             xmlns="http://www.w3.org/2000/svg"
@@ -111,11 +112,9 @@
               d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
             ></path>
           </svg>
-        </ng-container>
-
-        <ng-template #buttonText>
+        } @else {
           {{ isRegistering() ? 'Create Account' : 'Sign In' }}
-        </ng-template>
+        }
       </button>
     </section>
 
