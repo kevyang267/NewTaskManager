@@ -32,40 +32,40 @@ Before you begin, ensure you have the following installed on your local machine:
 
 ```text
 NewTaskManager/
-├── TaskManager/                    # .NET Backend
-│   ├── TaskManager/                # Main project
-│   │   ├── Controllers/            # API controllers
-│   │   ├── Data/                   # DbContext
-│   │   ├── Middleware/             # Global exception handler
-│   │   ├── Migrations/             # EF Core migrations
-│   │   ├── Models/                 # Entity models
-│   │   ├── Properties/             # Launch settings
-│   │   ├── Security/               # Auth interfaces & token service
-│   │   ├── Services/               # Business logic
-│   │   ├── appsettings.json        # App configuration
-│   │   ├── Program.cs              # Entry point & DI setup
-│   │   └── TaskManager.csproj      # Project file
-│   ├── TaskManager.Tests/          # Unit tests
-│   └── Dockerfile                  # Backend Docker build
-├── TaskManagerUI/                  # Angular Frontend
+├── TaskManager/                   
+│   ├── TaskManager/              
+│   │   ├── Controllers/           
+│   │   ├── Data/                   
+│   │   ├── Middleware/            
+│   │   ├── Migrations/           
+│   │   ├── Models/                
+│   │   ├── Properties/             
+│   │   ├── Security/              
+│   │   ├── Services/             
+│   │   ├── appsettings.json       
+│   │   ├── Program.cs             
+│   │   └── TaskManager.csproj     
+│   ├── TaskManager.Tests/         
+│   └── Dockerfile               
+├── TaskManagerUI/                  
 │   ├── src/
 │   │   ├── app/
-│   │   │   ├── auth/               # Auth service, interceptor & guard
-│   │   │   ├── components/         # Login & task manager components
-│   │   │   ├── models/             # Task & DTO models
-│   │   │   ├── services/           # Task service
-│   │   │   ├── app.config.ts       # App providers
-│   │   │   ├── app.routes.ts       # Route definitions
-│   │   │   ├── app.ts              # Root component
-│   │   │   └── app.html            # Root template
+│   │   │   ├── auth/             
+│   │   │   ├── components/      
+│   │   │   ├── models/             
+│   │   │   ├── services/         
+│   │   │   ├── app.config.ts     
+│   │   │   ├── app.routes.ts       
+│   │   │   ├── app.ts            
+│   │   │   └── app.html           
 │   │   ├── environments/
-│   │   │   ├── environment.ts          # Local dev config
-│   │   │   └── environment.production.ts  # Production config
-│   │   └── main.ts                 # Browser entry point
-│   └── Dockerfile                  # Frontend Docker build
+│   │   │   ├── environment.ts         
+│   │   │   └── environment.production.ts 
+│   │   └── main.ts                
+│   └── Dockerfile               
 ├── .dockerignore
-├── .env                            # Environment variables (do not commit)
-├── docker-compose.yml              # Multi-container setup
+├── .env                          
+├── docker-compose.yml            
 └── README.md
 ```
 
