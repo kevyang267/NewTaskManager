@@ -1,18 +1,19 @@
 # Task Manager
+
 > A full-stack enterprise application built with .NET 10, Angular, and Docker.
 
 This repository contains a containerized web application designed for performance and scalability. The backend is powered by a **.NET 10** Web API, the frontend is a modern **Angular** application, and the entire stack (including the database) is orchestrated using **Docker Compose**.
 
-![Alt text](Login.png)
+![Alt text](assets/Login.png)
 
 ---
 
 ## Tech Stack
 
-* **Backend:** .NET 10 (MVC), Entity Framework Core
-* **Frontend:** Angular, TypeScript, TailwindCSS
-* **Database:** PostgreSQL
-* **Infrastructure:** Docker, Docker Compose
+- **Backend:** .NET 10 (MVC), Entity Framework Core
+- **Frontend:** Angular, TypeScript, TailwindCSS
+- **Database:** PostgreSQL
+- **Infrastructure:** Docker, Docker Compose
 
 ---
 
@@ -20,10 +21,10 @@ This repository contains a containerized web application designed for performanc
 
 Before you begin, ensure you have the following installed on your local machine:
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop)
-* [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
-* [Node.js](https://nodejs.org/) (v20+ recommended)
-* [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0)
+- [Node.js](https://nodejs.org/) (v20+ recommended)
+- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
 ---
 
@@ -74,25 +75,25 @@ NewTaskManager/
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/yourusername/taskmanager.git
-    cd taskmanager
-    ```
+   ```bash
+   git clone https://github.com/yourusername/taskmanager.git
+   cd taskmanager
+   ```
 
 2. Create a `.env` file in the root directory:
 
-    ```env
-    DB_CONNECTION=Host=postgres;Database=TaskManagerDb;Username=dbadmin;Password=yourpassword
-    Username=dbadmin
-    Password=yourpassword
-    Database=TaskManagerDb
-    ```
+   ```env
+   DB_CONNECTION=Host=postgres;Database=TaskManagerDb;Username=dbadmin;Password=yourpassword
+   Username=dbadmin
+   Password=yourpassword
+   Database=TaskManagerDb
+   ```
 
 3. Start the application:
 
-    ```bash
-    docker compose up --build
-    ```
+   ```bash
+   docker compose up --build
+   ```
 
 4. Access the app at `http://localhost:4000`
 
@@ -102,12 +103,12 @@ The API will be available at `http://localhost:5000` and Swagger at `http://loca
 
 ## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
+| Variable        | Description                                    |
+| --------------- | ---------------------------------------------- |
 | `DB_CONNECTION` | Full EF Core connection string for the backend |
-| `Username` | PostgreSQL username |
-| `Password` | PostgreSQL password |
-| `Database` | PostgreSQL database name |
+| `Username`      | PostgreSQL username                            |
+| `Password`      | PostgreSQL password                            |
+| `Database`      | PostgreSQL database name                       |
 
 > **Note:** Never commit your `.env` file. It is listed in `.dockerignore` to prevent it from being included in Docker builds.
 
@@ -115,17 +116,17 @@ The API will be available at `http://localhost:5000` and Swagger at `http://loca
 
 ## API Endpoints
 
-| Method | Route | Description | Auth Required |
-|--------|-------|-------------|---------------|
-| POST | `/api/v1/auth/register` | Register a new user | No |
-| POST | `/api/v1/auth/login` | Login | No |
-| POST | `/api/v1/auth/logout` | Logout | No |
-| GET | `/api/v1/auth/me` | Get current user | Yes |
-| GET | `/api/v1/taskmanager` | Get all tasks | Yes |
-| GET | `/api/v1/taskmanager/{id}` | Get task by ID | Yes |
-| POST | `/api/v1/taskmanager` | Create a task | Yes |
-| PATCH | `/api/v1/taskmanager/{id}` | Update a task | Yes |
-| DELETE | `/api/v1/taskmanager/{id}` | Delete a task | Yes |
+| Method | Route                      | Description         | Auth Required |
+| ------ | -------------------------- | ------------------- | ------------- |
+| POST   | `/api/v1/auth/register`    | Register a new user | No            |
+| POST   | `/api/v1/auth/login`       | Login               | No            |
+| POST   | `/api/v1/auth/logout`      | Logout              | No            |
+| GET    | `/api/v1/auth/me`          | Get current user    | Yes           |
+| GET    | `/api/v1/taskmanager`      | Get all tasks       | Yes           |
+| GET    | `/api/v1/taskmanager/{id}` | Get task by ID      | Yes           |
+| POST   | `/api/v1/taskmanager`      | Create a task       | Yes           |
+| PATCH  | `/api/v1/taskmanager/{id}` | Update a task       | Yes           |
+| DELETE | `/api/v1/taskmanager/{id}` | Delete a task       | Yes           |
 
 ---
 
@@ -159,10 +160,10 @@ Application settings are managed via `appsettings.json`. Environment-specific ov
 
 Key settings:
 
-| Key | Description |
-|-----|-------------|
-| `Jwt:Key` | Secret key used to sign JWT tokens (min. 32 characters) |
-| `Jwt:Issuer` | JWT issuer |
-| `Jwt:Audience` | JWT audience |
-| `Jwt:ExpiryMinutes` | Token expiry duration in minutes |
-| `AllowedOrigins` | CORS allowed origin for the frontend |
+| Key                 | Description                                             |
+| ------------------- | ------------------------------------------------------- |
+| `Jwt:Key`           | Secret key used to sign JWT tokens (min. 32 characters) |
+| `Jwt:Issuer`        | JWT issuer                                              |
+| `Jwt:Audience`      | JWT audience                                            |
+| `Jwt:ExpiryMinutes` | Token expiry duration in minutes                        |
+| `AllowedOrigins`    | CORS allowed origin for the frontend                    |
